@@ -1,26 +1,96 @@
-<body>
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lian Zhu Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <section id="about">
-      <h1>Lian Zhu</h1>
-      <p>Computer Science Student</p>
-    </section>
+    <main>
+      <section id="about" class="section">
+        <div class="container about-container">
+          <img
+            src="public\assets\picture.png"
+            alt="Portrait of Lian Zhu"
+            class="profile-image"
+          />
+          <div class="about-text">
+            <h1>Lian Zhu</h1>
+            <h3>Computer Science Student @ Portland State University</h3>
+            <p>
+              I am a Computer Science student at Portland State University. I
+              first had unrestricted access to a computer when I was five years
+              old and never stopped exploring technology since then! This is my
+              final project for CS463, an Intro to Web Development class.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-    </section>
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Experience</h2>
 
-    <section id="contact">
-      <h2>Contact</h2>
-    </section>
-  </main>
+          <div class="experience-item">
+            <h3>Jr. Software Development Engineer Intern</h3>
+            <h4>Amazon - Portland, OR</h4>
+            <p class="date">Oct. 2025 - Present</p>
 
-  <script src="script.js"></script>
-</body>
+            <p>
+              Under the Listings organization, I'm currently working on a bunch
+              of cool services on Vendor Central, which is Amazon's invite only
+              platform for vendors. My work here (so far) has involved
+              cross-team collaboration for net-new features full-stack to
+              improve the vendor experience. I have also contributed to backend
+              service cleanup and deprecation efforts aimed at reducing overhead
+              (and save $), and have been exploring agentic-assisted workflows
+              to help streamline test data generation and internal development
+              processes.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3>Front-Desk Receptionist</h3>
+            <h4>Shute Park Aquatic & Recreation Center - Hillsboro, OR</h4>
+            <p class="date">Feb. 2023 - Oct. 2025</p>
+
+            <p>
+              At SHARC I was working as a front-desk receptionist at a
+              city-owned recreation center. I spent my time helping customers
+              setup, cancel, put on hold, or update memberships (and also just
+              letting customers pay to use the pool or gym), while maintaining
+              professionalism and delivering great customer service. Here, I
+              developed a bunch of soft skills like communication, teamwork,
+              problem-solving and adaptability.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+```

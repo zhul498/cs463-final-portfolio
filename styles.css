@@ -1,20 +1,114 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  padding: 1rem;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+.navbar {
   background-color: #222;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
 }
 
-nav a {
+.navbar a {
   color: white;
-  margin-right: 1rem;
   text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: bold;
 }
 
-section {
-  padding: 4rem 2rem;
+.navbar a:hover {
+  color: #cccccc;
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* About Section */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+#about h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#about h3 {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+#about p {
+  max-width: 700px;
+}
+
+#experience h2,
+#projects h2,
+#contact h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.experience-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.experience-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+  .about-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #about p {
+    margin: 0 auto;
+  }
+
+  .navbar {
+    text-align: center;
+  }
 }
