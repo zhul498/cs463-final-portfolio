@@ -19,3 +19,22 @@ contactForm.addEventListener("submit", function (event) {
 
   contactForm.reset();
 });
+
+const fadeElements = document.querySelectorAll(".fade-in");
+
+const fadeObserver = new IntersectionObserver(
+  function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  },
+);
+
+fadeElements.forEach(function (element) {
+  fadeObserver.observe(element);
+});
